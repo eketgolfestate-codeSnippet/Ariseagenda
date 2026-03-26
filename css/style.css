@@ -173,3 +173,79 @@ ul.list-unstyled li i {
   color: #d4edda; /* icon color */
   font-size: 1rem;
 }
+
+
+
+
+
+
+.info-card {
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.info-card:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.number-circle {
+  width: 40px;
+  height: 40px;
+  background: #198754;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.dropdown-icon {
+  transition: transform 0.3s;
+}
+
+/* Rotate icon when collapse is open */
+.collapse.show + .dropdown-icon,
+.collapse.show ~ .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+
+.dropdown-icon {
+  transition: transform 0.3s;
+}
+
+[aria-expanded="true"] .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+.arise{
+    color: #ff7a00;
+    font-weight: 900;
+}
+.golf{
+    color: #268b07;
+    font-weight: 900;
+}
+
+
+.dash-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.dash-list li::before {
+  content: "- ";
+  margin-right: 5px;
+}
+
+.text{
+    text-align: center;
+   text-align: center !important;
+}
+
+
