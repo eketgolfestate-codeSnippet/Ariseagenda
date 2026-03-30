@@ -49,6 +49,11 @@
         .nav-link:hover {
             color: #268b07 !important;
         }
+
+
+        .collapse {
+            transition: all 0.35s ease;
+        }
     </style>
 </head>
 
@@ -196,7 +201,7 @@
                                 broader vision of sustainable growth and prosperity.
                             </p>
 
-                            <img src="./images/WhatsApp-Image-2025-12-16-at-12.38.08-PM (1).jpeg" alt="Eket Golf Estate"
+                            <img src="./images/new picture apartment pent 1.jpeg" alt="Eket Golf Estate"
                                 class="img-fluid rounded shadow-sm w-100"> <br>
 
                             <div class="text-center"> <br>
@@ -652,6 +657,19 @@
 
             collapse.addEventListener('hide.bs.collapse', function () {
                 this.previousElementSibling.querySelector('.dropdown-icon').classList.remove('rotate');
+            });
+        });
+    </script>
+
+
+    <script>
+        document.querySelectorAll('.collapse').forEach(collapseEl => {
+            collapseEl.addEventListener('shown.bs.collapse', function () {
+                const yOffset = -90; // adjust based on your navbar height
+                const card = this.closest('.info-card');
+                const y = card.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+                window.scrollTo({ top: y, behavior: 'smooth' });
             });
         });
     </script>
