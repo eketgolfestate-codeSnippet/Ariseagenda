@@ -42,9 +42,19 @@ section img:hover {
 }
 
 .modal-content img {
-    max-height: 80vh;
+    max-height: 100vh;
     object-fit: cover;
 }
 
+.gallery-item {
+    width: 100%;
+    height: 250px; /* same height for all */
+    overflow: hidden;
+    border-radius: 10px;
+}
 
-
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* THIS fixes everything */
+}
